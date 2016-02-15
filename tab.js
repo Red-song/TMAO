@@ -370,41 +370,59 @@ var btn=$("#reload");
 
  var list1=$("#top1-right-li1"); 
  var list2=$(".list")[0]; 
-
       hover(list1,function(){
         var lis=$(".list1",list2);
         var h=lis[0].offsetHeight;
               list2.style.height=0+"px";
                animate(list2,{height:lis.length*h},400)
+               list1.style.background="white";
+               list2.style.border="1px solid #f2f2f2"
+               list2.style.borderTop="none";
                  },function(){
                  	animate(list2,{height:0},400)
+                  list1.style.background="#f2f2f2";
+                  list2.style.border="none"
                  })
  var list3=$("#top1-right-li2"); 
  var list4=$(".lists")[0]; 
-
       hover(list3,function(){
         var lis=$(".list1",list4);
         var h=lis[0].offsetHeight;
               list4.style.height=0+"px";
                animate(list4,{height:lis.length*h},400)
+               list3.style.background="white";
+               list4.style.border="1px solid #f2f2f2"
+               list4.style.borderTop="none";
                  },function(){
                  	animate(list4,{height:0},400)
+                  list3.style.background="#f2f2f2";
+                  list4.style.border="none"
                  })   
 
   var list5=$("#top1-right-li3");
   var list6=$(".list-wang")[0]; 
      hover(list5,function(){
-     	animate(list6,{height:200},400)
+     	animate(list6,{height:180},400)
+      list5.style.background="white";
+      list6.style.border="1px solid #f2f2f2"
+      list6.style.borderTop="none";
      },function(){
      	animate(list6,{height:0},400)
+      list5.style.background="#f2f2f2";
+      list6.style.border="none"
      })
 
 var list7=$("#top1-right-li4");
   var list8=$(".list-wzdh")[0]; 
      hover(list7,function(){
-     	animate(list8,{height:400},400)
+      list7.style.background="white";
+      list8.style.border="1px solid #f2f2f2";
+      list8.style.borderTop="none";
+     	animate(list8,{height:230},400)
      },function(){
-     	animate(list8,{height:0},400)
+     	animate(list8,{height:0},200)
+      list7.style.background="#f2f2f2";
+      list8.style.border="none"
      })
 
 
